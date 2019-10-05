@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Space To Grow</title>
+<script src="pixi.js"></script>
+    <script src="pixi-audio.js"></script>
+          <script src="tweenjs.min.js"></script>
+    <script src="game.js"></script>
+
+<style type="text/css">
+* {margin:0; padding:0}
+body {background:#EED5D2; -moz-user-select:none; text-align:center; font-size:12px}
+table {margin:80px auto 10px auto; overflow:hidden; border-collapse:collapse; }
+td {width:20px; height:20px; border:1px solid #eee; background:#f4f4f4}
+.cover {background:#39c;}
+.food {background:#093}
+.block {background:#333}
+.brake {background:#f00}
+.skate {background:#00f}
+#say {margin-top:100px; color:black}
+#help {width:420px; margin:0 auto; line-height:17px; color:black}
+#help span {float:left; margin-right:10px}
+#help .box {width:15px; height:15px; margin-right:5px; border:1px solid black}
+#btnStart {clear:both; width:100px; height:30px; margin-top:10px; padding:0; background:#bbb; color:#222; border:1px solid #fff; border-bottom-color:#000; border-right-color:#000; cursor:pointer}
+</style>
+
+    <script src="pixi.js"></script>
+    <script src="pixi-audio.js"></script>
+</head>
+<body onselectstart="return false">
+	<div id="say">Space To Grow</div>
+    <div id="snakeWrap"></div>
+    <div id="help">
+    	<span class="box food"></span><span>Green:Food</span>
+        <span class="box block"></span><span>Gray:Drugs</span>
+        <span class="box skate"></span><span>Blue:Skateboard</span>
+        <span class="box brake"></span><span>Red:Brake</span>
+        <span style="float:right">The highest score: <strong id="score">0</strong></span>
+        <input type="button" id="btnStart" value="Start" />
+    </div>
+<h1>Instructions</h1>
+    <h2>Use keyboard up, down, left and right operation.</h2>
+    <h2>Green is edible, blue is accelerated, red becomes slow, and black ends the game.</h2>
+</body>
+</html>
